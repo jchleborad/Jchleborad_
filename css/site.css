@@ -45,7 +45,7 @@ body {
     padding: 50px 0;
     text-align: center;
     color: white;
-    background: url('/ngApp/images/bits-and-bytes.png') no-repeat bottom center scroll;
+    background: url('/images/bits-and-bytes.png') no-repeat bottom center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
