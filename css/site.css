@@ -6,7 +6,6 @@ html,
 body {
     height: 100%;
     width: 100%;
-    /* font-family: 'Poppins', sans-serif; */
     font-family: 'Comfortaa', sans-serif;
     color: #222;
     background-color: #f5f5f5;
@@ -207,8 +206,6 @@ resume div {
 }
 
 .resume-right {
-    /* display: inline-block;
-    float: right; */
     padding-right: 5rem;
 }
 
