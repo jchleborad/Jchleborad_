@@ -46,7 +46,7 @@ body {
     padding: 50px 0;
     text-align: center;
     color: black;
-    background: url('/ngApp/images/gettysburg-address.png') no-repeat bottom center scroll;
+    background: url('/images/gettysburg-address.png') no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -67,6 +67,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     text-shadow: 2px 2px 4px #808080;
+    margin-bottom: 0;
 }
 
 .project-img {
