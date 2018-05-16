@@ -2,7 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,700');
-html,
+@import url('https://fonts.googleapis.com/css?family=Audiowide:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash:400,500,700');
+
 body {
     height: 100%;
     width: 100%;
@@ -132,6 +135,23 @@ footer div p {
 }
 
 /* home.html */
+
+.robotstore {
+    font-family: Audiowide;
+}
+
+.dealership {
+    font-family: Berkshire Swash;
+}
+
+.cdo {
+    font-family: Rock Salt;
+    font-size: 1rem;
+}
+
+.travelblog {
+    font-family: Comfortaa;
+}
 
 .hr-quote-top {
     width: 50%;
