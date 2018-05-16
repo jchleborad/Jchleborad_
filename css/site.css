@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Coda:400,500,700');
 
 body {
     height: 100%;
@@ -141,7 +142,7 @@ footer div p {
 }
 
 .dealership {
-    font-family: Berkshire Swash;
+    font-family: Coda;
 }
 
 .cdo {
