@@ -6,7 +6,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Coda:400,500,700');
-
 body {
     height: 100%;
     width: 100%;
@@ -67,26 +66,6 @@ body {
     }
 }
 
-.project-banner {
-    text-align: center;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px #808080;
-    margin-bottom: 0;
-}
-
-.project-img {
-    border: 5px solid #ddd;
-    background-color: #f2f2f2;
-    border-radius: 4px;
-    padding: 5px;
-    box-shadow: 5px 5px 5px grey;
-    margin-bottom: 1rem;
-}
-
-.project-img:hover {
-    border-radius: 15px 40px;
-}
-
 img {
     image-orientation: from-image;
 }
@@ -137,21 +116,52 @@ footer div p {
 
 /* home.html */
 
+.project-banner {
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #808080;
+    margin-bottom: 0;
+}
+
+.project-img {
+    border: 5px solid #ddd;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px grey;
+    margin-bottom: 1rem;
+}
+
+.project-img:hover {
+    border-radius: 15px 40px;
+}
+
 .robotstore {
     font-family: Audiowide;
+    font-size: 1.5rem;
 }
 
 .dealership {
-    font-family: Coda;
+    font-family: Berkshire Swash;
+    font-size: 1.5rem;
 }
 
 .cdo {
     font-family: Rock Salt;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .travelblog {
     font-family: Comfortaa;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.technologies li {
+    display: inline;
+    color: red;
+    list-style-type: none;
 }
 
 .hr-quote-top {
