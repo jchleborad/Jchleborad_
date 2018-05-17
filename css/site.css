@@ -116,6 +116,12 @@ footer div p {
 
 /* home.html */
 
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .project-banner {
     text-align: center;
     font-size: 2.5rem;
