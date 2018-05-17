@@ -129,6 +129,10 @@ footer div p {
     margin-bottom: 0;
 }
 
+.project-desc {
+    text-align: center;
+}
+
 .project-img {
     border: 5px solid #ddd;
     background-color: #f2f2f2;
