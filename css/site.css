@@ -338,7 +338,8 @@ resume div {
 .fa-twitter:hover,
 .fa-strava:hover,
 .fa-github:hover,
-.fa-jicon:hover {
+.fa-jicon:hover,
+.hackhive:hover {
     opacity: .5;
 }
 
