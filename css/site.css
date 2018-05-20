@@ -149,23 +149,27 @@ footer div p {
 .robotstore {
     font-family: Audiowide;
     font-size: 1.5rem;
+    color: red;
 }
 
-.dealership {
+.cardealership {
     font-family: Berkshire Swash;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    color: #089E6E;
 }
 
 .cdo {
     font-family: Rock Salt;
     font-size: 1rem;
     font-weight: bold;
+    color: #800080;
 }
 
-.travelblog {
+.cindyandme {
     font-family: Comfortaa;
     font-size: 1.2rem;
     font-weight: bold;
+    color: black;
 }
 
 .technologies li {
