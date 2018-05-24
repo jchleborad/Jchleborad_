@@ -1,4 +1,4 @@
-/* Index.ejs */
+/* INDEX.EJS */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,700');
@@ -114,7 +114,7 @@ footer div p {
     font-size: .6rem;
 }
 
-/* home.html */
+/* HOME.HTML */
 
 .center-block {
     display: block;
@@ -146,26 +146,26 @@ footer div p {
     border-radius: 15px 40px;
 }
 
-.robotstore {
+.robotstore-title {
     font-family: Audiowide;
     font-size: 1.5rem;
     color: red;
 }
 
-.cardealership {
+.cardealership-title {
     font-family: Berkshire Swash;
     font-size: 1.6rem;
     color: #089E6E;
 }
 
-.cdo {
+.cdo-title {
     font-family: Rock Salt;
     font-size: 1rem;
     font-weight: bold;
     color: #800080;
 }
 
-.cindyandme {
+.cindyandme-title {
     font-family: Comfortaa;
     font-size: 1.2rem;
     font-weight: bold;
@@ -247,7 +247,133 @@ footer div p {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
 }
 
-/* resume.html */
+/* PROJECTS.HTML */
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+/* .frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+} */
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+/* RESUME.HTML */
 
 .resume-padding {
     padding-left: 5rem;
@@ -303,7 +429,7 @@ resume div {
     font-weight: bold;
 }
 
-/* SOCIAL MEDIA STYLES */
+/* SOCIAL MEDIA */
 
 .fa-facebook-f {
     color: #3b5998;
@@ -361,19 +487,8 @@ resume div {
     font-size: 1rem;
 }
 
-@media screen and (orientation: portrait) {
-    img.img-header {
-        max-width: 90%;
-    }
-}
 
-@media screen and (orientation: landscape) {
-    img.img-header {
-        max-height: 90%;
-    }
-}
-
-/* Fonts, Buttons & Other Elements */
+/* FONTS, BUTTONS & OTHER ELEMENTS */
 
 .btn-primary {
     background-color: #6648b1;
@@ -448,7 +563,19 @@ hr.light-100 {
     color: black;
 }
 
-/*---Media Queries --*/
+/*---MEDIA QUERIES --*/
+
+@media screen and (orientation: portrait) {
+    img.img-header {
+        max-width: 90%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    img.img-header {
+        max-height: 90%;
+    }
+}
 
 @media (max-width: 992px) {
     .social a {
@@ -511,7 +638,7 @@ hr.light-100 {
     }
 }
 
-/*---Firefox Bug Fix --*/
+/*---FIREFOX BUG FIX --*/
 
 .carousel-item {
     transition: -webkit-transform 0.5s ease;
@@ -521,7 +648,7 @@ hr.light-100 {
     backface-visibility: visible;
 }
 
-/*--- Fixed Background Image --*/
+/*--- CORRECT BACKGROUND IMAGE --*/
 
 figure {
     position: relative;
@@ -554,7 +681,7 @@ figure {
     will-change: transform;
 }
 
-/*--- Bootstrap Padding Fix --*/
+/*--- BOOTSTRAP PADDING FIX --*/
 
 [class*="col-"] {
     padding: 1rem;
