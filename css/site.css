@@ -342,7 +342,7 @@ section .section-title {
     transform: rotateY(180deg);
 }
 
-.mainflip {
+/* .mainflip {
     -webkit-transition: 1s;
     -webkit-transform-style: preserve-3d;
     -ms-transition: 1s;
@@ -353,7 +353,7 @@ section .section-title {
     transition: 1s;
     transform-style: preserve-3d;
     position: relative;
-}
+} */
 
 .frontside {
     position: relative;
