@@ -21,10 +21,11 @@ body {
     display: table;
     width: 100%;
     height: auto;
-    padding: 200px 0;
+    padding: 0px 0px 300px 0px;
     text-align: center;
-    color: white;
-    background: url('/images/bw-coastline.jpg') no-repeat bottom center scroll;
+    color: black;
+    background: url('/images/group-cyclist.png') no-repeat bottom center scroll;
+    /* background: url('/images/bw-coastline.jpg') no-repeat bottom center scroll; */
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
