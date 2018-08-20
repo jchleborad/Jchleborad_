@@ -431,6 +431,7 @@ section .section-title {
 .resume-hr-bottom {
     margin-top: .5rem;
     margin-bottom: 0%;
+    width: 100%;
 }
 
 resume div {
