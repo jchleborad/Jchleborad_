@@ -1,5 +1,4 @@
 /* INDEX.EJS */
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Audiowide:400,500,700');
@@ -73,8 +72,7 @@ img {
     image-orientation: from-image;
 }
 
-/* Navbar & Footer*/
-
+/* NAVBAR & FOOTER*/
 .navbar {
     padding: .8rem;
 }
@@ -118,7 +116,6 @@ footer div p {
 }
 
 /* INDEX.HTML */
-
 .quotebox-ctr {
     display: flex;
     justify-content: center;
@@ -130,7 +127,6 @@ footer div p {
     letter-spacing: 1px;
     font-weight: bold;
 }
-
 
 .center-block {
     display: block;
@@ -208,7 +204,6 @@ footer div p {
 }
 
 /* PROJECTS.HTML */
-
 .fa-html5 {
     color:#E34F26;
     font-size: 2rem;
@@ -419,7 +414,6 @@ section .section-title {
 } */
 
 /* RESUME.HTML */
-
 .resume-padding {
     padding-left: 5rem;
 }
@@ -476,7 +470,6 @@ resume div {
 }
 
 /* SOCIAL MEDIA */
-
 .fa-facebook-f {
     color: #3b5998;
 }
@@ -533,8 +526,35 @@ resume div {
     font-size: 1rem;
 }
 
-/* FONTS, BUTTONS & OTHER ELEMENTS */
+/*ADVENTURES.HTML*/
+.black-link {
+    color: black;
+    text-decoration: none; /*removes underline*/
+}
 
+.black-link:hover {
+    color:black; /*keeps hyperlink black on hover*/
+}
+
+.adventure-hr-top {
+    margin-top: 0%;
+    margin-bottom: .5rem;
+}
+
+.adventure-hr-bottom {
+    margin-top: .5rem;
+    margin-bottom: 0%;
+    width: 100%;
+}
+
+.adventure-title {
+    font-family: Comfortaa;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* FONTS, BUTTONS & OTHER ELEMENTS */
 .btn-primary {
     background-color: #6648b1;
     border: 1px solid #6648b1;
