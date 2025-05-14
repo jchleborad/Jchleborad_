@@ -73,6 +73,11 @@ img {
 }
 
 /* NAVBAR & FOOTER*/
+.active-link {
+  color: gold !important;
+  font-weight: bold;
+}
+
 .navbar {
     padding: .8rem;
 }
@@ -553,6 +558,13 @@ resume div {
     font-weight: bold;
     color: black;
 }
+
+.modal-img {
+  max-height: 80vh; /* no taller than 80% of viewport */
+  max-width: 100%;
+  object-fit: contain;
+}
+
 
 /* FONTS, BUTTONS & OTHER ELEMENTS */
 .btn-primary {
