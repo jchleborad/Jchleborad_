@@ -23,7 +23,7 @@ body {
     padding: 0px 0px 300px 0px;
     text-align: center;
     color: black;
-    background: url('/images/group-cyclist.png') no-repeat bottom center scroll;
+    background: url('/images/CSS/group-cyclist.png') no-repeat bottom center scroll;
     /* background: url('/images/bw-coastline.jpg') no-repeat bottom center scroll; */
     background-color: black;
     -webkit-background-size: cover;
@@ -51,7 +51,7 @@ body {
     padding: 50px 0;
     text-align: center;
     color: black;
-    background: url('/images/gettysburg-address.png') no-repeat bottom center scroll;
+    background: url('/images/CSS/gettysburg-address.png') no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
