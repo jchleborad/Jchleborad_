@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css?family=Coda:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Special+Elite:400,500,700');
 
+
 body {
     height: 100%;
     width: 100%;
@@ -119,6 +120,16 @@ footer div h5 {
 footer div p {
     font-size: .6rem;
 }
+
+.navbar, .navbar .nav-link {
+    font-family: 'Comfortaa', sans-serif !important;
+}
+
+h2, h1, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
 
 /* INDEX.HTML */
 .quotebox-ctr {
