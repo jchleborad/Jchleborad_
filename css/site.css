@@ -235,10 +235,18 @@ h2, h1, h3, h4, h5, h6 {
 
 /* PROJECT605.HTML */
 
-.project605-logo {
-    margin-left: -45px;
-    margin-top: -50px;
+/* Remove bottom margin and padding from the section */
+section.d-flex {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
+
+/* Reduce top margin of the first row inside the main container */
+main.container > .row:first-of-type {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 
 .fa-html5 {
     color:#E34F26;
@@ -585,13 +593,16 @@ resume div {
 }
 
 .black-link {
-    color: black;
-    text-decoration: none; /*removes underline*/
+  font-family: 'Comfortaa', sans-serif;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .black-link:hover {
-    color:black; /*keeps hyperlink black on hover*/
+  text-decoration: underline;
 }
+
 
 .adventure-hr-top {
     margin-top: 0%;
