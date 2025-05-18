@@ -73,6 +73,16 @@ img {
     image-orientation: from-image;
 }
 
+/* GENERAL */
+a {
+    color: #000;;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 /* NAVBAR & FOOTER*/
 .active-link {
   color: gold !important;
@@ -132,6 +142,10 @@ h2, h1, h3, h4, h5, h6 {
 
 
 /* INDEX.HTML */
+.rounded-img {
+    border-radius: 12px;
+}
+
 .quotebox-ctr {
     display: flex;
     justify-content: center;
@@ -219,7 +233,13 @@ h2, h1, h3, h4, h5, h6 {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
 }
 
-/* PROJECTS.HTML */
+/* PROJECT605.HTML */
+
+.project605-logo {
+    margin-left: -45px;
+    margin-top: -50px;
+}
+
 .fa-html5 {
     color:#E34F26;
     font-size: 2rem;
@@ -542,7 +562,28 @@ resume div {
     font-size: 1rem;
 }
 
-/*ADVENTURES.HTML*/
+/*CINDYANDME.HTML*/
+.dark-box {
+    background-color: #e9ecef;
+    color: black;
+    text-align: center;
+    padding: 6px;
+    max-width: 700px;
+    margin: 20px auto;
+    border-radius: 6px;
+}
+
+.dark-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.dark-box p {
+    font-size: 18px;
+    line-height: 1;
+}
+
 .black-link {
     color: black;
     text-decoration: none; /*removes underline*/
