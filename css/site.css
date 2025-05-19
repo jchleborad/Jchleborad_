@@ -247,6 +247,28 @@ main.container > .row:first-of-type {
   padding-top: 0 !important;
 }
 
+/*Double Matting for Picture Frame for business cards */
+.matting-frame {
+  padding: 10px;
+  background: #ccc; /* outer mat */
+  border: 1px solid #999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.matting-frame:hover {
+  transform: scale(1.03);
+}
+
+.matting-frame img {
+  display: block;
+  width: 100%;
+  background: #fff; /* inner mat */
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+}
+
 
 .fa-html5 {
     color:#E34F26;
@@ -602,7 +624,6 @@ resume div {
 .black-link:hover {
   text-decoration: underline;
 }
-
 
 .adventure-hr-top {
     margin-top: 0%;

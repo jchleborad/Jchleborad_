@@ -54,17 +54,15 @@
         </nav>
     </header>
 
-<!-- Aligned Project605 Header -->
 <div class="container">
-  <div class="row jumbotron" style="margin-top:100px; margin-bottom: 0; padding-top: 5px; padding-bottom: 0px;">
-    <div class="col-12">
-      <div class="d-inline-block mr-3">
-        <h2 style="margin-bottom: 0;">Project605</h2>
+  <div class="row jumbotron py-1" style="margin-top: 100px; margin-bottom: 0;">
+    <div class="col-12;">
+      <div class="d-flex align-items-center justify-content-start" style="gap: 1rem;">
+          <img src="/images/logos/project605-logo.png" alt="Project605 Logo"
+          style="width: 150px; height: auto; margin-bottom: 12px;">
+          <h2 class="mb-0" style="margin-left: 10px;">My Workshop and Other Stuff</h2>
       </div>
-      <div class="d-block mt-2" style="padding-right: 5rem;">
-        <hr class="adventure-hr-top" style="margin: 0rem 0;">
-        <hr class="adventure-hr-bottom" style="margin: 0rem 0;">
-      </div>
+      <hr class="adventure-hr-bottom my-0">
     </div>
   </div>
 </div>
@@ -149,8 +147,54 @@
         </div>
     </main>
 
-    <!-- Modals -->
 
+<!--BUSINESS CARDS FROM MY CAREER-->
+
+<section class="card-gallery container my-5">
+  <h3 class="text-center mb-4">Business Cards Through the Years</h3>
+  <div class="row g-4 justify-content-center">
+    <!-- Repeat for each image -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="matting-frame" data-toggle="modal" data-target="#cardModal" data-img="/images/viewProject605/bc-svd-om.png">
+        <img src="/images/viewProject605/bc-svd-om.png" alt="bc-svd-om" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="matting-frame" data-toggle="modal" data-target="#cardModal" data-img="/images/viewProject605/bc-alside-bm.png">
+        <img src="/images/viewProject605/bc-alside-bm.png" alt="bc-alside-bm" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="matting-frame" data-toggle="modal" data-target="#cardModal" data-img="/images/viewProject605/bc-bfs-ops.png">
+        <img src="/images/viewProject605/bc-bfs-ops.png" alt="bc-bfs-ops" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="matting-frame" data-toggle="modal" data-target="#cardModal" data-img="/images/viewProject605/bc-rmk-ops.png">
+        <img src="/images/viewProject605/bc-rmk-ops.png" alt="bc-rmk-ops" class="img-fluid">
+      </div>
+    </div>
+    <!-- Add more cards here -->
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer id="footer" class="bg-dark" style="padding-top: 0px;">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-md-8 d-none d-md-block" style="padding-top: 20px; padding-bottom: 20px;">
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- PROJECT MODALS-->
     <!-- Garage Build-Out Pictures Modal -->
     <div class="modal fade" id="garagePicsModal" tabindex="-1" role="dialog" aria-labelledby="garagePicsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
@@ -163,7 +207,7 @@
                 </div>
                 <div class="modal-body">
                     <!-- Add your pictures here -->
-                    <p>Pictures will go here.</p>
+                    <p>Garage Pictures will go here.</p>
                 </div>
             </div>
         </div>
@@ -198,7 +242,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Pictures will go here.</p>
+                    <p>Backyard Pictures will go here.</p>
                 </div>
             </div>
         </div>
@@ -232,11 +276,155 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Pictures will go here.</p>
+                    <p>Kitchen Pictures will go here.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Kitchen Remodel Description Modal -->
-    <div class="modal fade" id="kitchenDescModal" tabindex="-1" role="dialog" aria-labelledby="kitchenDescModalLabel
+    <div class="modal fade" id="kitchenDescModal" tabindex="-1" role="dialog" aria-labelledby="kitchenDescModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kitchen Remodel - Description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This project updated the countertops, appliances, plumbing hardware, added an RO system and installed additional lighting.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deck Expansion Pictures Modal -->
+    <div class="modal fade" id="deckPicsModal" tabindex="-1" role="dialog" aria-labelledby="deckPicsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Deck Expansion - Pictures</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add your pictures here -->
+                    <p>Deck Pictures will go here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deck Expansion Description Modal -->
+    <div class="modal fade" id="deckDescModal" tabindex="-1" role="dialog" aria-labelledby="deckDescModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Deck Expansion - Description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add your text description here -->
+                    <p>This project expanded the existing deck, adding space for seating and a BBQ cooking station.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Office Setup Pictures Modal -->
+    <div class="modal fade" id="officePicsModal" tabindex="-1" role="dialog" aria-labelledby="officePicsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Home Office - Pictures</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Home Office Pictures will go here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Office Setup Description Modal -->
+    <div class="modal fade" id="officeDescModal" tabindex="-1" role="dialog" aria-labelledby="officeDescModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Home Office - Description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This project created a new Home Office for a work-at-home parent.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Landscaping Pictures Modal -->
+    <div class="modal fade" id="landscapingPicsModal" tabindex="-1" role="dialog" aria-labelledby="landscapingPicsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Landscaping - Pictures</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Landscape Pictures will go here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Landscaping Description Modal -->
+    <div class="modal fade" id="landscapingDescModal" tabindex="-1" role="dialog" aria-labelledby="landscapingDescModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kitchen Remodel - Description</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This project added plants and a walking path to the front yard.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- BUSINESS CARD MODALS -->
+<div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-body text-center p-0">
+        <img src="" alt="Enlarged Business Card" id="modalCardImage" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  document.querySelectorAll('.matting-frame').forEach(frame => {
+    frame.addEventListener('click', () => {
+      const imgSrc = frame.getAttribute('data-img');
+      document.getElementById('modalCardImage').src = imgSrc;
+    });
+  });
+</script>
+
+
+</body>
+
+</html>
