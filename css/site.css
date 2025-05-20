@@ -269,6 +269,13 @@ main.container > .row:first-of-type {
   border: 1px solid #e0e0e0;
 }
 
+/*Control the size of the pop-out image on the business cards */
+.modal-img {
+    max-width: 100%;
+    max-height: 90vh;
+    height: auto;
+    width: auto;
+}
 
 .fa-html5 {
     color:#E34F26;
