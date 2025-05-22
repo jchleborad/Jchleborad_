@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Coda:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Special+Elite:400,500,700');
-
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Special+Elite&display=swap');
 
 body {
     height: 100%;
@@ -25,12 +25,12 @@ body {
     text-align: center;
     color: black;
     background: url('/images/CSS/group-cyclist.png') no-repeat bottom center scroll;
-    /* background: url('/images/bw-coastline.jpg') no-repeat bottom center scroll; */
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
     .intro-body {
         display: table-cell;
         vertical-align: middle;
@@ -44,30 +44,37 @@ body {
 }
 
 .mastheadquote {
-    /* display: table; */
-    width: auto;
-    height: auto;
-    border: 2px solid #a5a5a5;
-    border-radius: 8px;
-    padding: 50px 0;
-    text-align: center;
-    color: black;
-    background: url('/images/CSS/gettysburg-address.png') no-repeat bottom center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    .intro-body {
-        display: table-cell;
-        vertical-align: middle;
-        .brand-heading {
-            font-size: 50px;
-        }
-        .intro-text {
-            font-size: 18px;
-        }
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid #a5a5a5;
+  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+  color: black;
+  background: url('/images/CSS/gettysburg-address.png') no-repeat center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  min-height: 400px; /* adjust as needed */
+  position: relative;
+  overflow: hidden;
 }
+
+.brand-heading {
+  font-size: 32px; /* adjust as needed */
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
 
 img {
     image-orientation: from-image;
@@ -144,6 +151,34 @@ h2, h1, h3, h4, h5, h6 {
 /* INDEX.HTML */
 .rounded-img {
     border-radius: 12px;
+}
+
+.special-elite-lincoln {
+    font-family: "Special Elite", system ui;
+    font-weight: 100;
+    font-style:normal;
+    font-size: 22px;
+}
+
+.homemade-apple-lincoln {
+    font-family: "Homemade Apple", cursive;
+    font-weight:100;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.quote-block {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.author-line {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    white-space: nowrap;
+    font-weight: 700;
 }
 
 .quotebox-ctr {
@@ -275,6 +310,10 @@ main.container > .row:first-of-type {
     max-height: 90vh;
     height: auto;
     width: auto;
+}
+
+.manager-font {
+    font-size: .7rem;
 }
 
 .fa-html5 {
