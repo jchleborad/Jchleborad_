@@ -43,6 +43,30 @@ body {
     }
 }
 
+.frame-matte-container {
+  padding: 50px 0;
+  background-color: #e5e5e5; /* Optional background behind the frame */
+}
+
+.matte-frame {
+  background-color: #36454f; /* Matte color */
+  padding: 20px; /* Matte thickness */
+  border: 12px solid #999; /* Frame border */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 5);
+  max-width: 960px;
+  width: 95%;
+  border-radius: 10px; /* Rounded corners for frame */
+  overflow: hidden; /* Ensures child content respects border radius */
+}
+
+/* Optional: shrink the masthead image slightly inside the frame */
+.matte-frame .masthead {
+  border: 1px solid #ccc;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; /* Slightly smaller radius to nest inside */
+}
+
+
 .mastheadquote {
   display: flex;
   align-items: center;
@@ -157,14 +181,14 @@ h2, h1, h3, h4, h5, h6 {
     font-family: "Special Elite", system ui;
     font-weight: 100;
     font-style:normal;
-    font-size: 22px;
+    font-size: 30px;
 }
 
 .homemade-apple-lincoln {
     font-family: "Homemade Apple", cursive;
     font-weight:100;
     font-style: normal;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .quote-block {
@@ -315,6 +339,111 @@ main.container > .row:first-of-type {
 .manager-font {
     font-size: .7rem;
 }
+
+/*PROJECT CARD WITH THUMBNAILS LAYOUT*/
+/* Project Cards Container */
+.project-row {
+  margin-top: 40px;
+}
+
+/* Card styling */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title above card */
+.project-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Main image styling */
+.project-main-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+}
+
+/* Thumbnails container - horizontal scroll with arrows */
+.thumbnail-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* Thumbnails track: flex container */
+.thumbnail-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+/* Each thumbnail */
+.project-thumbnail {
+  width: 60px;
+  height: 45px;
+  object-fit: cover;
+  margin-right: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.project-thumbnail.selected {
+  border-color: #007bff; /* Bootstrap primary color */
+}
+
+/* Slider arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  z-index: 10;
+}
+
+.slider-arrow.left {
+  left: 0;
+}
+
+.slider-arrow.right {
+  right: 0;
+}
+
+/* Description text */
+.project-description {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  min-height: 3.6em; /* approx 3 lines */
+  margin-top: 5px;
+  padding: 0 5px;
+}
+
+
 
 .fa-html5 {
     color:#E34F26;

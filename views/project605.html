@@ -67,6 +67,88 @@
   </div>
 </div>
 
+<!--TESTING A NEW LAYOUT FOR MY PROJECT PICTURES-->
+<div class="container mt-5">
+<div class="container project-row">
+  <div class="row">
+    
+    <!-- Project Card 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="project-card">
+        <div class="project-title">Project One</div>
+        <img src="/images/viewProject605/woodworking/cribbage-1.png" alt="Project One Main" class="project-main-image" id="main-image-1">
+        
+        <div class="thumbnail-slider-container" id="thumb-slider-1">
+          <div class="slider-arrow left" data-target="1" data-direction="left">&#8249;</div>
+          <div class="slider-arrow right" data-target="1" data-direction="right">&#8250;</div>
+          <div class="thumbnail-track">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail selected" data-target="1" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 1">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail" data-target="1" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 2">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail" data-target="1" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 3">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail" data-target="1" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 4">
+          </div>
+        </div>
+        
+        <div class="project-description">
+          This is a brief description of Project One. It explains what the project is about and highlights key features.
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project Card 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="project-card">
+        <div class="project-title">Project Two</div>
+        <img src="/images/viewProject605/woodworking/cribbage-1.png" alt="Project Two Main" class="project-main-image" id="main-image-2">
+        
+        <div class="thumbnail-slider-container" id="thumb-slider-2">
+          <div class="slider-arrow left" data-target="2" data-direction="left">&#8249;</div>
+          <div class="slider-arrow right" data-target="2" data-direction="right">&#8250;</div>
+          <div class="thumbnail-track">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail selected" data-target="2" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 1">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail" data-target="2" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 2">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail" data-target="2" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 3">
+          </div>
+        </div>
+        
+        <div class="project-description">
+          Short summary of Project Two. Describe the core idea and what technologies you used.
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project Card 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="project-card">
+        <div class="project-title">Project Three</div>
+        <img src="/images/viewProject605/woodworking/cribbage-1.png" alt="Project Three Main" class="project-main-image" id="main-image-3">
+        
+        <div class="thumbnail-slider-container" id="thumb-slider-3">
+          <div class="slider-arrow left" data-target="3" data-direction="left">&#8249;</div>
+          <div class="slider-arrow right" data-target="3" data-direction="right">&#8250;</div>
+          <div class="thumbnail-track">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail selected" data-target="3" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 1">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail" data-target="3" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 2">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail" data-target="3" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 3">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail" data-target="3" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 4">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail" data-target="3" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 5">
+            <img src="/images/viewProject605/woodworking/cribbage-1.png" class="project-thumbnail" data-target="3" data-full="/images/viewProject605/woodworking/cribbage.png" alt="Thumb 4">
+          </div>
+        </div>
+        
+        <div class="project-description">
+          Brief description for Project Three goes here. Highlight interesting points or challenges you overcame.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
 
 <!--MY PROJECTS...
 THIS IS THE SECTION THAT HAS THE CARD LAYOUT FOR THE VARIOUS PROJECTS I WILL POST.  WITH EACH CARD,
@@ -698,6 +780,39 @@ BUTTON ON CARD 1, CLOSES THE MODAL WHEN CLICKING NEXT ON THE LAST CARD-->
     }
   });
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Handle thumbnail clicks
+    const thumbnails = document.querySelectorAll('.project-thumbnail');
+    thumbnails.forEach(thumb => {
+      thumb.addEventListener('click', function () {
+        const targetId = this.dataset.target;
+        const mainImg = document.getElementById('main-image-' + targetId);
+        if (!mainImg) return;
+
+        // Change main image source
+        mainImg.src = this.dataset.full;
+
+        // Update selected thumbnail
+        const allThumbs = document.querySelectorAll(`.project-thumbnail[data-target="${targetId}"]`);
+        allThumbs.forEach(t => t.classList.remove('selected'));
+        this.classList.add('selected');
+      });
+    });
+
+    // Slider arrows
+    const arrows = document.querySelectorAll('.slider-arrow');
+    arrows.forEach(arrow => {
+      arrow.addEventListener('click', function () {
+        const targetId = this.dataset.target;
+        const direction = this.dataset.direction;
+        const sliderContainer = document.getElementById('thumb-slider-' + targetId);
+        const track = sliderContainer.querySelector('.thumbnail-track');
+
+        // Calculate width of one thumbnail plus margin (approximate)
+
+
 
 </body>
 
