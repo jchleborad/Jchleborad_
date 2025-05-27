@@ -114,6 +114,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.moose-right {
+    transform: scalex(-1);
+}
+
 /* NAVBAR & FOOTER*/
 .active-link {
   color: gold !important;
@@ -168,6 +173,12 @@ footer div p {
 
 h2, h1, h3, h4, h5, h6 {
     font-family: 'Comfortaa', sans-serif;
+}
+
+.footer-full {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #3f3f3f;
 }
 
 
@@ -292,6 +303,7 @@ h2, h1, h3, h4, h5, h6 {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
 }
 
+
 /* PROJECT605.HTML */
 
 /* Remove bottom margin and padding from the section */
@@ -327,6 +339,17 @@ main.container > .row:first-of-type {
   padding: 8px;
   border: 1px solid #e0e0e0;
 }
+
+.business-card-img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
 
 /*Control the size of the pop-out image on the business cards */
 .modal-img {
@@ -389,6 +412,8 @@ main.container > .row:first-of-type {
   display: flex;
   transition: transform 0.3s ease;
   will-change: transform;
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
 /* Each thumbnail */
@@ -441,6 +466,59 @@ main.container > .row:first-of-type {
   min-height: 3.6em; /* approx 3 lines */
   margin-top: 5px;
   padding: 0 5px;
+}
+
+/* SYLING FOR PROJECT605 IMAGES*/
+#modalImage {
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.project-main-image {
+  cursor: zoom-in;
+}
+
+.modal-nav-zone {
+  cursor: pointer; /* replace w-resize / e-resize */
+}
+
+
+.modal-nav-zone {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: transparent;
+  transition: none;
+  cursor: pointer;
+}
+
+.modal-nav-zone:hover {
+  background-color: transparent;
+}
+
+.modal-nav-zone i {
+  opacity: .3;
+  transition: opacity 2s ease;
+}
+
+.modal-nav-zone:hover i {
+  opacity: 1;
+}
+
+
+
+.modal-nav-left {
+  left: 0;
+}
+
+.modal-nav-right {
+  right: 0;
 }
 
 
@@ -579,19 +657,6 @@ section .section-title {
     transform: rotateY(180deg);
 }
 
-/* .mainflip {
-    -webkit-transition: 1s;
-    -webkit-transform-style: preserve-3d;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
-    -moz-transform: perspective(1000px);
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transition: 1s;
-    transform-style: preserve-3d;
-    position: relative;
-} */
-
 .frontside {
     position: relative;
     -webkit-transform: rotateY(0deg);
@@ -642,17 +707,6 @@ section .section-title {
     font-size: 18px;
     color: #007b5e !important;
 }
-
-/* .frontside .card .card-title,
-.backside .card .card-title {
-    color: #007b5e !important;
-} */
-
-/* .frontside .card .card-body img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-} */
 
 /* RESUME.HTML */
 .resume-padding {
@@ -1023,28 +1077,30 @@ figure {
     padding: 1rem;
 }
 
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
+/*CINDY & ME*/
+.btn-custom {
+  color: #fff;
+  background-color: #007b5e;
+  border: 1px solid #007b5e;
+}
 
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: #108d6f;
+  border-color: #108d6f;
+  outline: none;
+  box-shadow: none;
+}
 
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+.bg-custom-beachblue {
+    background-color: #779eb2;
+}
 
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+.limited-width {
+  max-width: 60%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
-/* FONT SIZES HEADINGS TO REM
-H1 = 2.5rem
-H2 = 2.00rem
-H3 = 1.75rem
-H4 = 1.50rem
-H5 = 1.25rem
-H6 = 1.00rem
-*/
