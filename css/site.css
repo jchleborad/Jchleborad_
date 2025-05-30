@@ -843,6 +843,29 @@ resume div {
     line-height: 1;
 }
 
+@media (max-width: 576px) {
+  .dark-box {
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .dark-box h2 {
+    font-size: 22px;
+  }
+
+  .dark-box p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+.wider-textbox {
+  max-width: 700px; /* Or whatever looks best */
+  width: 100%;
+}
+
+
+
 .black-link {
   font-family: 'Comfortaa', sans-serif;
   color: black;
@@ -878,6 +901,54 @@ resume div {
   object-fit: contain;
 }
 
+.btn-custom {
+  color: #fff;
+  background-color: #007b5e;
+  border: 1px solid #007b5e;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background-color: #108d6f;
+  border-color: #108d6f;
+  outline: none;
+  box-shadow: none;
+}
+
+.bg-custom-beachblue {
+    background-color: #779eb2;
+}
+
+.limited-width {
+  max-width: 60%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.container-custom {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  background-color: #779eb2; /* ✅ beachblue added */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* ✅ stronger shadow */
+  border-radius: 12px;
+}
+
+
+
+/* Wider text box, still inside the beachblue background */
+.wider-textbox {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section#johnandcindy {
+  overflow: visible;
+}
 
 /* FONTS, BUTTONS & OTHER ELEMENTS */
 .btn-primary {
@@ -1077,30 +1148,4 @@ figure {
     padding: 1rem;
 }
 
-/*CINDY & ME*/
-.btn-custom {
-  color: #fff;
-  background-color: #007b5e;
-  border: 1px solid #007b5e;
-}
-
-.btn-custom:hover,
-.btn-custom:focus {
-  background-color: #108d6f;
-  border-color: #108d6f;
-  outline: none;
-  box-shadow: none;
-}
-
-.bg-custom-beachblue {
-    background-color: #779eb2;
-}
-
-.limited-width {
-  max-width: 60%;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 
