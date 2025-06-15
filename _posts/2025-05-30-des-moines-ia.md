@@ -4,7 +4,7 @@ date: 2025-05-30
 
 thumbnail:
   url: /images/viewCindyandMe/Iowa2025/welcometoiowa.png
-  title: "Drive to Des Moines IA"
+  title: "On to Des Moines IA"
 
 images:
 - url: /images/viewCindyandMe/Iowa2025/gallup.JPEG

@@ -4,7 +4,7 @@ date: 2024-04-26
 
 thumbnail:
   url: /images/viewCindyandMe/Moms90th/welcometorapidcity.png
-  title: "Birthday Celebration"
+  title: "Mom's Birthday Celebration"
 
 images:
 - url: /images/viewCindyandMe/Moms90th/IMG_0782.JPEG

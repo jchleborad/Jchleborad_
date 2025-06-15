@@ -832,13 +832,13 @@ resume div {
 }
 
 .dark-box h2 {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 4px;
 }
 
 .dark-box p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1;
 }
 
@@ -927,7 +927,7 @@ resume div {
 }
 
 .container-custom {
-  max-width: 750px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5rem;

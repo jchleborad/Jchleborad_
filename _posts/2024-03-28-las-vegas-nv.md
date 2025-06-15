@@ -4,7 +4,7 @@ date: 2024-03-28
 
 thumbnail:
   url: /images/viewCindyandMe/Vegas2024/welcometovegas.png
-  title: "Tyler & Kirsten Send Off"
+  title: "Tyler & Kirsten's Send Off"
 
 images:
 - url: /images/viewCindyandMe/Vegas2024/IMG_0577.JPEG
