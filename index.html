@@ -147,56 +147,58 @@
 <!-- Footer OUTSIDE of container -->
 <footer id="footer" class="bg-dark text-white pt-0 pb-0">
   <div class="container">
-
-
-    <!-- Contact and Social -->
-    <div class="row text-center text-md-left">
+    <!-- Row with vertical centering for all columns -->
+    <div class="row text-center text-md-left align-items-center" style="min-height: 80px;">
+      
+      <!-- Left Column -->
       <div class="col-md-4 d-flex align-items-center mb-1 mb-md-0">
         <img src="/images/logos/chleb-c-logo.png" alt="Project605 Logo" width="50" class="mr-2">
         <div class="ml-2">
-          <!--
-          <div><a href="tel:+16236965646" class="text-white" style="font-size: .9rem;">(623) 696-5646</a></div>
-          <div><a href="mailto:jchleborad@gmail.com" class="text-white" style="font-size: .9rem;">jchleborad@gmail.com</a></div>
-          -->
-          <div><a href="mailto:project605@jchleborad.com" class="text-white" style="font-size: 1 rem">project605@jchleborad.com</a></div>
+          <div>
+            <a href="mailto:project605@jchleborad.com" class="text-white" style="font-size: 1rem;">
+              project605@jchleborad.com
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="col-md-4 text-center mb-1 mb-md-0">
+      <!-- Center Column -->
+      <div class="col-md-4 d-flex flex-column align-items-center justify-content-center text-center mb-1 mb-md-0">
         <p class="mb-0" style="font-size: .6em;">&copy; MMXXV - Project605 LLC, All Rights Reserved</p>
         <p class="mb-0" style="font-size: .6em;">jchleborad.com</p>
         <span style="font-size: .5rem;">Website Established IV-XX-MMXVIII</span>
       </div>
 
+      <!-- Right Column -->
       <div class="col-md-4 d-flex align-items-center justify-content-md-end justify-content-center mt-1 mb-1 mb-md-0">
         <div>
           <a href="https://www.linkedin.com/in/jchleborad" target="_blank" class="text-white mr-3" title="LinkedIn">
             <i class="fab fa-linkedin-in" style="font-size: 1.4rem;"></i>
           </a>
           <a href="https://github.com/jchleborad" target="_blank" class="text-white mr-3" title="GitHub">
-            <i class="fab fa-github" style="font-size: 1.4rem; color: white"></i>
+            <i class="fab fa-github" style="font-size: 1.4rem; color: white;"></i>
           </a>
           <a href="https://www.strava.com/athletes/jchleborad" target="_blank" class="text-white" title="Strava">
             <i class="fab fa-strava" style="font-size: 1.4rem;"></i>
           </a>
 
           <!-- Visit Counter Load Only in Production -->
-          <div id="visit-counter-container" class="mt-2" style="text-align: right;"></div>
+          <div id="visit-counter-container" class="mt-2 text-center"></div>
         </div>
       </div>
-     </div>
+
     </div>
   </div>
 </footer>
 
 <!-- Visit Counter Script-->
 <script>
-  if (location.hostname !== 'localhost') {
+  if (location.hostname === 'jchleborad.com') {
     const img = document.createElement('img');
-    img.src = 'https://hitwebcounter.com/counter/counter.php?page=20878943&style=0025&nbdigits=6&type=page&initCount=1989';
+    img.src = 'https://hitwebcounter.com/counter/counter.php?page=20926369&style=0001&nbdigits=6&type=page&initCount=1989';
     img.alt = 'Visit Counter';
     img.title = 'Visit Counter';
-    img.style.width = '80px';
+    img.style.width = '60px';
     document.getElementById('visit-counter-container').appendChild(img);
   }
 </script>

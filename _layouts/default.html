@@ -37,11 +37,17 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active-link" href="/views/cindyandme.html">Cindy & Me</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="/views/project605.html">Project605</a></li>
-            <li class="nav-item"><a class="nav-link" href="/views/cycling.html">Cycling</a></li>
-            <li class="nav-item"><a class="nav-link" href="/views/about.html">About</a></li>
+            <a class="nav-link {% if page.url == '/views/cindyandme.html/' %}active-link{% endif %}" href="/views/cindyandme.html">Cindy & Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == '/views/project605.html' %}active-link{% endif %}" href="/views/project605.html">Project605</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == '/views/cycling.html' %}active-link{% endif %}" href="/views/cycling.html">Cycling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == '/views/about.html' %}active-link{% endif %}" href="/views/about.html">About</a>
+</li>
           </ul>
         </div>
       </div>
