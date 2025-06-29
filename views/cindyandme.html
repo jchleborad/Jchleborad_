@@ -74,7 +74,11 @@ permalink: /views/cindyandme.html/
 
   <p class="card-text">
     {{ thumb.title }}<br>
-    {{ post.date | date: "%B %Y" }}
+      {% if post.title == "Wedding Day!" %}
+        {{ post.date | date: "%B %d, %Y" }}
+      {% else %}
+        {{ post.date | date: "%B %Y" }}
+      {% endif %}
   </p>
 
           <div class="d-flex justify-content-center mt-3">

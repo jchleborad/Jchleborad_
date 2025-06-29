@@ -83,7 +83,7 @@ images:
   title: "Olive Brancy Cemetary (Blaylocks)"
 
 ---
-
+<p>
 <u>Day 1: &nbsp;&nbsp;Friday, May 30, 2025</u><br>Today we left for Des Moines. We took off early in the afternoon on our way to Gallup, NM.  
 This was just a stopping point to get us down the road so we wouldn’t have long days on the road during our trip, giving 
 us time to stop and see things that we discovered on the way.  We had dinner at the 

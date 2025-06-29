@@ -7,6 +7,11 @@ thumbnail:
   title: "Tyler & Kirsten's Engagement"
 
 images:
+- url: /images/viewCindyandMe/TandKEngagement/IMG_6436.JPG
+- url: /images/viewCindyandMe/TandKEngagement/IMG_6437.JPG
+- url: /images/viewCindyandMe/TandKEngagement/IMG_6438.JPG
+- url: /images/viewCindyandMe/TandKEngagement/IMG_6440.JPG
+- url: /images/viewCindyandMe/TandKEngagement/IMG_6444.JPG
 - url: /images/viewCindyandMe/TandKEngagement/tandk1.JPG
 - url: /images/viewCindyandMe/TandKEngagement/tandk2.JPG 
 - url: /images/viewCindyandMe/TandKEngagement/tandk3.JPG 
@@ -23,5 +28,5 @@ images:
 ---
 
 <p>
-  Add a story here
+  Tyler and Kirsten got engaged while on a vacation with friends in California.  It was September 17th of 2023.
 </p>

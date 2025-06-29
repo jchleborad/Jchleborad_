@@ -1193,6 +1193,7 @@ figure {
   text-align: center;
 }
 
+/*--
 .nfl-embed-wrapper-matchups {
   display: flex;
   justify-content: center;
@@ -1229,13 +1230,235 @@ figure {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 }
 
-
 .nfl-iframe {
   max-width: 100%;
   width: 100%;
   height: 430px;
   border: none;
 }
+
+.nfl-embed-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 66.66%; /* 16:9 aspect ratio (height = 9/16 * 100)
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #042d59;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  margin: 0 auto 2rem auto;
+}
+
+.nfl-embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.nfl-embed-scaled {
+  position: relative;
+  width: 100%;
+  max-width: 750px; /* Cap width on large screens 
+  height: 450px; /* Adjust as needed 
+  margin: 0 auto 2rem auto;
+  background-color: #042d59;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.nfl-embed-scaled iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  width: 1280px; /* The natural width of the embedded Google Sheet 
+  height: 500px;  /* Match container height 
+  border: none;
+}
+
+/* Scale iframe on medium and small screens 
+@media (max-width: 1024px) {
+  .nfl-embed-scaled iframe {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 768px) {
+  .nfl-embed-scaled iframe {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 576px) {
+  .nfl-embed-scaled iframe {
+    transform: scale(0.55);
+  }
+}
+--*/
+
+/* ----------------------------------------------
+   Matchups – Largest
+   ---------------------------------------------- */
+.nfl-embed-scaled-matchups {
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  height: 550px; /* base iframe height */
+  margin: 0 auto 2rem auto;
+  background-color: #042d59;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.nfl-embed-scaled-matchups iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 550px;
+  border: none;
+  transform-origin: top left;
+}
+
+@media (max-width: 1024px) {
+  .nfl-embed-scaled-matchups {
+    height: 467px; /* 550 * 0.85 */
+  }
+  .nfl-embed-scaled-matchups iframe {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 768px) {
+  .nfl-embed-scaled-matchups {
+    height: 385px; /* 550 * 0.7 */
+  }
+  .nfl-embed-scaled-matchups iframe {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 576px) {
+  .nfl-embed-scaled-matchups {
+    height: 302px; /* 550 * 0.55 */
+  }
+  .nfl-embed-scaled-matchups iframe {
+    transform: scale(0.55);
+  }
+}
+
+
+/* ----------------------------------------------
+   Results – Medium
+   ---------------------------------------------- */
+.nfl-embed-scaled-results {
+  position: relative;
+  width: 100%;
+  max-width: 475px;
+  height: 450px;
+  margin: 0 auto 2rem auto;
+  background-color: #042d59;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.nfl-embed-scaled-results iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1100px;
+  height: 450px;
+  border: none;
+  transform-origin: top left;
+}
+
+@media (max-width: 1024px) {
+  .nfl-embed-scaled-results {
+    height: 383px; /* 450 * 0.85 */
+  }
+  .nfl-embed-scaled-results iframe {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 768px) {
+  .nfl-embed-scaled-results {
+    height: 315px; /* 450 * 0.7 */
+  }
+  .nfl-embed-scaled-results iframe {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 576px) {
+  .nfl-embed-scaled-results {
+    height: 248px; /* 450 * 0.55 */
+  }
+  .nfl-embed-scaled-results iframe {
+    transform: scale(0.55);
+  }
+}
+
+
+/* ----------------------------------------------
+   Standings – Smallest
+   ---------------------------------------------- */
+.nfl-embed-scaled-standings {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto 2rem auto;
+  background-color: #042d59;
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.nfl-embed-scaled-standings iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 960px;
+  height: 400px;
+  border: none;
+  transform-origin: top left;
+}
+
+@media (max-width: 1024px) {
+  .nfl-embed-scaled-standings {
+    height: 340px;
+  }
+  .nfl-embed-scaled-standings iframe {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 768px) {
+  .nfl-embed-scaled-standings {
+    height: 280px;
+  }
+  .nfl-embed-scaled-standings iframe {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 576px) {
+  .nfl-embed-scaled-standings {
+    height: 220px;
+  }
+  .nfl-embed-scaled-standings iframe {
+    transform: scale(0.55);
+  }
+}
+
+
 
 
 .nfl-title h1 {

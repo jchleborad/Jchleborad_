@@ -42,7 +42,7 @@ images:
 <p>
    Cindy, Danyel, Tyler, Kirsten and I made the trip. We stayed towards the North end of the Strip at Treasure Island, which gave us
    plenty of opportunity to walk many, many miles over the four days. I think that was more walking than I had done in quite some time; 
-   but it was well worth the time together!
+   but it was well worth the time together! (We even had the obligatory group t-shirts to wear - thank you Danyel!)
 </p>
 <p>
   One of the highlights of the trip was seeing the Blue Man Group. It was an unforgettable night—not because of the energy of the show, 
