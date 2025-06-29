@@ -1,10 +1,10 @@
 # _config.yml
-# title: Cindy & Me
 markdown: kramdown
-# theme: minima
 
 include:
   - views
 
-  
-
+collections:
+  project605beta:
+    output: true
+    permalink: /project605beta/:name/

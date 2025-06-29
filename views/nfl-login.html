@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NFL Pool Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/site.css" rel="stylesheet">
+</head>
+<body id="nfl-login">
+  <div class="nfl-login-overlay">
+    <div class="nfl-login-box">
+      <h2>NFL Pool Login</h2>
+      <p>Enter the access password:</p>
+      <input type="password" class="nfl-login-input" id="password" placeholder="Password">
+      <button class="nfl-login-button" onclick="login()">Enter</button>
+      <p id="error" class="nfl-login-error">Incorrect password. Try again.</p>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      const pw = document.getElementById("password").value;
+      const validPassword = ""; // Replace with your actual password
+      if (pw === validPassword) {
+        window.location.href = "/views/nflpool.html";
+      } else {
+        document.getElementById("error").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+---
+layout: default
+title: "NFL Pool"
+permalink: /views/nflpool.html/
+navbar_minimal: true
+---
+
+<div class="nfl-background">
+  <div class="nfl-overlay text-center">
+    <div class="container">
+
+      <div class="nfl-title mb-4">
+        <h1>NFL GameDay!</h1>
+      </div>
+      <!-- Top Buttons -->
+      <div class="d-flex justify-content-center flex-wrap mb-0">
+        <a href="https://forms.gle/JzKvcxXrCzPQGc7t5" class="btn nfl-btn" target="_blank">Submit Picks (Google Form)</a>
+        <a href="#matchups" class="btn nfl-btn">Matchups</a>
+        <a href="#results" class="btn nfl-btn">Weekly Results</a>
+        <a href="#standings" class="btn nfl-btn">Season Standings</a>
+      </div>
+      
+      <!-- Link to NFL Schedule -->
+      <div class="text-center mb-4">
+        <a href="https://www.google.com/search?q=nfl+schedule#sie=lg;/g/11lyp42zk1;6;/m/059yj;mt;fp;1;;;"
+        class="btn nfl-btn d-inline-flex flex-column align-items-center"
+        style="width: auto; padding: 0.5rem 1rem;" target="_blank">
+        <span style="line-height: 1;">2025 NFL Schedule</span>
+        <small style="font-size: 0.75rem; margin-top: -2px; line-height: 1;">(opens new window)</small>
+      </a>
+      <!-- Live Scores Button -->
+        <a href="https://www.nfl.com/scores/" 
+        class="btn nfl-btn d-inline-flex flex-column align-items-center"
+        style="width: auto; padding: 0.5rem 1rem;" target="_blank">
+        <span style="line-height: 1;">Check Live NFL Scores</span>
+        <small style="font-size: 0.75rem; margin-top: -2px; line-height: 1;">(opens new window)</small>
+        </a>
+
+      </div>
+
+      <!-- Matchups -->
+      <div class="nfl-section text-center" id="matchups">
+        <h3>This Week's Matchups</h3>
+        <div class="nfl-embed-wrapper-matchups">
+          <iframe 
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlEbTCQCbybfMsiJgtYDvNzH8w2xKvbvg31tC0Lo_H3St7GSm97pgozKbErGfk9-5GW6A8PJ6U-3mR/pubhtml?gid=2057702659&single=true"
+            class="nfl-iframe">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Weekly Results -->
+      <div class="nfl-section text-center" id="results">
+        <h3>Last Week's Results</h3>
+        <div class="nfl-embed-wrapper-results">
+          <iframe 
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlEbTCQCbybfMsiJgtYDvNzH8w2xKvbvg31tC0Lo_H3St7GSm97pgozKbErGfk9-5GW6A8PJ6U-3mR/pubhtml?gid=1684832367&single=true"
+            class="nfl-iframe">
+          </iframe>
+        </div>
+      </div>
+      
+      <!-- Season Standings -->
+      <div class="nfl-section text-center" id="standings">
+        <h3>Standings</h3>
+        <div class="nfl-embed-wrapper-standings">
+          <iframe 
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTlEbTCQCbybfMsiJgtYDvNzH8w2xKvbvg31tC0Lo_H3St7GSm97pgozKbErGfk9-5GW6A8PJ6U-3mR/pubhtml?gid=979831214&single=true"
+            class="nfl-iframe">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-full text-white bg-dark text-center py-2">
+  <div class="container">
+    <small>&copy; Project605&trade;  2025 NFLPool</small>
+  </div>
+</footer>
