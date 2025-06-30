@@ -3,7 +3,7 @@ title: "They're Engaged!"
 date: 2023-09-09
 
 thumbnail:
-  url: /images/viewCindyandMe/TandKEngagement/engaged-sign.jpg
+  url: /images/viewCindyandMe/TandKEngagement/engaged-sign_.jpg
   title: "Tyler & Kirsten's Engagement"
 
 images:

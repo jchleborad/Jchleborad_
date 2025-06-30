@@ -3,7 +3,7 @@ title: "Wedding Day!"
 date: 2025-06-07
 
 thumbnail:
-  url: /images/viewCindyandMe/TandKWedding/rings.jpg
+  url: /images/viewCindyandMe/TandKWedding/rings_.jpg
   title: "Tyler & Kirsten's Wedding"
 
 images:

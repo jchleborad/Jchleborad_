@@ -74,7 +74,7 @@ permalink: /views/cindyandme.html/
 
   <p class="card-text">
     {{ thumb.title }}<br>
-      {% if post.title == "Wedding Day!" %}
+      {% if post.title == "Wedding Day!" or post.title == "They're Engaged!" %}
         {{ post.date | date: "%B %d, %Y" }}
       {% else %}
         {{ post.date | date: "%B %Y" }}
@@ -86,7 +86,11 @@ permalink: /views/cindyandme.html/
               class="btn btn-custom mx-1" 
               data-toggle="modal" 
               data-target="#blog-{{ forloop.index }}">
-              About the Trip
+              {% if post.title == "Wedding Day!" or post.title == "They're Engaged!" %}
+                About the Day
+              {% else %}
+                About the Trip
+              {% endif %}
             </button>
             <button 
               class="btn btn-custom mx-1" 
