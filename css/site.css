@@ -18,18 +18,17 @@ body {
 }
 
 .masthead {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 0px 0px 300px 0px;
-    text-align: center;
-    color: black;
-    background: url('/images/CSS/group-cyclist.png') no-repeat bottom center scroll;
-    background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 300px 0px;
+  text-align: center;
+  color: black;
+  background: url('/images/CSS/group-cyclist.png') no-repeat bottom center scroll;
+  background-color: black;
+  background-size: cover;
+}
+
 
     .intro-body {
         display: table-cell;
@@ -94,11 +93,12 @@ body {
 .masthead.no-frame {
   border-radius: 10px;
   border: 2px solid black;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 12px 14px 30px rgba(0, 0, 0, 0.85); /* Darker and directional */
   margin: 30px auto;
   margin-top: 80px;
   max-width: 960px;
 }
+
 
 
 .brand-heading {
@@ -198,8 +198,12 @@ h2, h1, h3, h4, h5, h6 {
 
 
 /* INDEX.HTML */
-.rounded-img {
-    border-radius: 12px;
+.headshot-img {
+  border-radius: 12px;
+  border: 3px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 4px;
+  background-color: #fff;
 }
 
 .special-elite-lincoln {
@@ -1394,17 +1398,21 @@ figure {
 
 
 .nfl-title h1 {
-  color: #013369;
+  /*color: #013369;*/
+  color: #D02131;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-shadow: 
     -2px -2px 0 white,
      2px -2px 0 white,
     -2px  2px 0 white,
      2px  2px 0 white;
-  margin-bottom: 1.5rem;
+  /*margin-bottom: .5rem;*/
+  font-size: 5rem;
 }
 
-.nfl-section h3 {
+.nfl-section h2,
+.nfl-section h3,
+.nfl-section h1 {
   color:#D02131;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-shadow: 
@@ -1505,5 +1513,116 @@ figure {
   color: red;
   display: none;
   margin-top: 0.5rem;
+}
+
+
+/* Shared NFL section base */
+.nfl-section {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.nfl-section .nfl-header-title {
+  background-color: #013369;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto 0.5rem auto;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-weight: bold;
+  display: inline-flex;
+}
+
+.nfl-section .nfl-header-title h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+/* Shared table styling */
+.nfl-section table {
+  margin-top: .5rem;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 0.85rem;
+  width: 50%;
+  text-align: center;
+  line-height: .9;
+}
+
+.nfl-section table th {
+  background-color: #D02131;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nfl-section table td {
+  background-color: black;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Table responsiveness and spacing */
+.nfl-table-container {
+  margin-top: 1rem;
+}
+
+/* Section-specific targets for overrides if desired */
+.nfl-matchups .nfl-header-title h4 {
+  color: #ffffff;
+}
+
+.nfl-results .nfl-header-title h4 {
+  color: #ffffff;
+}
+
+.nfl-standings .nfl-header-title h4 {
+  color: #ffffff;
+}
+
+.nfl-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nfl-header-title {
+  margin-bottom: 0.75rem; /* Reduce spacing below the title */
+}
+
+.nfl-section table {
+  margin-top: 0.5rem;  /* Tighten space between title and table */
+  margin-bottom: 0.5rem; /* Tighten space after table */
+}
+
+
+/* ARROWS NEXT TO SUBMIT PICKS BUTTON */
+.submit-picks-highlight .arrow {
+  font-size: 2rem;
+  margin: 0 1rem;
+  animation: flashArrow 1s infinite alternate;
+  color:#0000FF;
+  text-shadow:
+    0 0 10px #fffb00,
+    0 0 20px #fffb00,
+    0 0 4px #fffb00;
+}
+
+.arrow-left {
+  animation-delay: 0s;
+}
+
+.arrow-right {
+  animation-delay: 0.5s;
+}
+
+@keyframes flashArrow {
+  from { opacity: 0.2; transform: scale(1); }
+  to { opacity: 1; transform: scale(1.3); }
 }
 
