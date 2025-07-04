@@ -21,16 +21,19 @@ permalink: /nfl-login/
     </div>
   </div>
 
-  <script>
-    function login() {
-      const pw = document.getElementById("password").value;
-      const validPassword = ""; // Replace with your actual password
-      if (pw === validPassword) {
-        window.location.href = "/nflpool/";
-      } else {
-        document.getElementById("error").style.display = "block";
-      }
-    }
-  </script>
+<script>
+function login() {
+  const enteredPassword = document.getElementById("password").value;
+  const correctPassword = ""; // Replace with your real password
+
+  if (enteredPassword === correctPassword) {
+    localStorage.setItem("nflLoginPassed", "true");
+    window.location.href = "/nflpool/";
+  } else {
+    alert("Incorrect password. Please try again.");
+  }
+}
+</script>
+
 </body>
 </html>

@@ -30,6 +30,14 @@
 
 </head>
 <body style="padding:0%">
+
+  <script>
+    // Redirect if user hasn't passed the simple login
+    if (!localStorage.getItem("nflLoginPassed") && window.location.pathname.includes("/nflpool")) {
+      window.location.href = "/nfl-login/";
+    }
+  </script>
+
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
@@ -59,6 +67,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="/">Home</a>
               </li>
+                {% if page.permalink == "/nflpool/" %}
+                  <li class="nav-item d-flex align-items-center">
+                    <a href="#" onclick="logout()" class="nav-link d-flex align-items-center py-2">
+                      <i class="fas fa-power-off me-2"></i>&nbsp;Logout
+                    </a>
+                  </li>
+
+
+                  </li>
+                {% endif %}
+
         </ul>
       </div>
     </nav>
@@ -79,4 +98,12 @@
 </html>
 
 </body>
+
+<script>
+  function logout() {
+    localStorage.removeItem("nflLoginPassed");
+    window.location.href = "/nfl-login/";
+  }
+</script>
+
 </html>
