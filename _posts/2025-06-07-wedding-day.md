@@ -48,5 +48,41 @@ images:
 
 ---
 <p>
-More to come!
+My toast to Tyler & Kirsten...
+</p>
+
+<p>
+Tyler recently wrote a note in my birthday card. It was one of those notes that remind you of how much that person means to you. As I stand here watching him begin this next chapter with Kirsten, I can’t help but hear those words echo in my heart.
+</p>
+
+<p>
+He told me he felt lucky to have me as a father—but the truth is, I’ve always felt lucky to have him as a son.
+</p>
+
+<p>
+Tyler said that as he’s gotten older and life has grown more complicated, he’s become more grateful and proud—but the truth is, it is me who could not be more grateful and proud.
+</p>
+
+<p>
+Tyler called me his moral compass—but as I look back, I see him as a model of a true sense of right and wrong and how to treat people.
+</p>
+
+<p>
+These are things I never set out to be or do as life went on and I became a husband and father.  But reading those words from him brings me joy and is one of the greatest honors of my life.
+</p>
+
+<p>
+To me, it is the greatest reward as a parent, seeing the kind of person your child has become as they have grown.
+</p>
+
+<p>
+And now, I see him becoming that compass. I see it in how he treats others, how he listens, how he carries himself, the relationships he has developed.  And, most of all, in how he loves Kirsten.
+</p>
+
+<p>
+Tyler & Kirsten,— watching the two of you together overwhelms me with pride and joy. There is an ease between you, there is joy and respect.  You are both so humble and full of heart. I have no doubt that the love you share will be a beacon for others—just like your words have been for me.
+</p>
+
+<p>
+May your love always feel like home. May your life be filled with laughter, your hearts with kindness, and your days filled with the kind of joy that brought all of us here to celebrate you.
 </p>

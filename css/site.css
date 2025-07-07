@@ -141,6 +141,8 @@ a:hover {
 
 .navbar {
     padding: .8rem;
+    z-index: 10;
+    position:relative
 }
 
 .navbar-nav li {
@@ -839,6 +841,24 @@ resume div {
 }
 
 /*CINDYANDME.HTML*/
+
+/* MOOSE SPILL OUT OF BOX */
+.moose-container {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.moose-overlap {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: -75px; /* Adjust this to cut moose mid-body */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
 .dark-box {
     background-color: #e9ecef;
     color: black;

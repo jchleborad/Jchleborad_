@@ -5,33 +5,28 @@ permalink: /cindyandme/
 ---
 
 <div class="container">
-  <div class="row jumbotron py-2" style="margin-top: 100px; margin-bottom: 0;">
+  <div class="row jumbotron" style="padding: 0.25rem 0; margin-top: 70px; margin-bottom: 0;">
     <div class="col-12">
-      <span>
-      <h2 class="mb-2">Our Adventures, Cindy & Me
-           <img src="/images/favicons/moose.png" alt="Moose Icon"
-           style="height: 40px; width: 40px; vertical-align:baseline; margin: 0 10px;">
-      </h2>
-      </span>
-      <div class="d-block" style="padding-right: 5rem;">
-        <span style="font-size: 1rem;">
 
+      <div class="position-relative" style="min-height: 60px;">
+        <img src="/images/favicons/moose.png" alt="Moose Icon" class="moose-overlap">
+        <h2 class="mb-0" style="position: relative; z-index: 2; line-height: 1.2;">
+          Our Adventures, Cindy & Me
+        </h2>
+      </div>
+
+      <div class="d-block mt-0 mb-0" style="padding-right: 5rem;">
+        <span style="font-size: 1rem;">
           <a>Cindy & John</a> |
           <a href="mailto:project605@jchleborad.com" class="black-link">Send us an email!</a>
-
-<!--      <a href="tel:+16236965646" class="black-link">John – (623) 696-5646</a> |
-          <a href="mailto:jchleborad@gmail.com" class="black-link">jchleborad@gmail.com</a> &nbsp;|&nbsp;
-
-
-          <a href="tel:+16236965645" class="black-link">Cindy – (623) 696-5645</a> |
-          <a href="mailto:cchleborad@icloud.com" class="black-link">cchleborad@icloud.com</a>
         </span>
       </div>
--->
+
       <hr class="adventure-hr-bottom my-1">
     </div>
   </div>
 </div>
+
 
 <section id="johnandcindy" class="pt-4 pb-4">
   <div class="container-custom rounded p-4 text-center mx-auto">
@@ -74,7 +69,7 @@ permalink: /cindyandme/
 
   <p class="card-text">
     {{ thumb.title }}<br>
-      {% if post.title == "Wedding Day!" or post.title == "They're Engaged!" %}
+      {% if post.title == "Wedding Day!" or post.title == "They're Engaged!" or post.title == "Side x Side Maiden Journey" %}
         {{ post.date | date: "%B %d, %Y" }}
       {% else %}
         {{ post.date | date: "%B %Y" }}
