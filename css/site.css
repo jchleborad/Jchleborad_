@@ -1622,27 +1622,13 @@ figure {
 
 
 /* ARROWS NEXT TO SUBMIT PICKS BUTTON */
-.submit-picks-highlight .arrow {
+.arrow-icon {
   font-size: 2rem;
+  color: #0000FF;
   margin: 0 1rem;
   animation: flashArrow 1s infinite alternate;
-  color:#0000FF;
   text-shadow:
     0 0 10px #fffb00,
     0 0 20px #fffb00,
     0 0 4px #fffb00;
 }
-
-.arrow-left {
-  animation-delay: 0s;
-}
-
-.arrow-right {
-  animation-delay: 0.5s;
-}
-
-@keyframes flashArrow {
-  from { opacity: 0.2; transform: scale(1); }
-  to { opacity: 1; transform: scale(1.3); }
-}
-

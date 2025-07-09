@@ -1,0 +1,10 @@
+# _config.yml
+markdown: kramdown
+
+include:
+  - views
+
+collections:
+  project605beta:
+    output: true
+    permalink: /project605beta/:name/
