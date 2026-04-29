@@ -50,9 +50,20 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           {% unless page.navbar_minimal %}
+
+
             <li class="nav-item">
               <a class="nav-link {% if page.url == '/views/cindyandme.html/' %}active-link{% endif %}" href="/cindyandme/">Cindy & Me</a>
             </li>
+
+<!--
+<li class="nav-item">
+  <a class="nav-link {% if page.url == '/views/cindyandme.html/' %}active-link{% endif %}" href="/cindyandme/">
+    <img src="/images/logos/cindy-and-me-logo.png" alt="Cindy & Me" style="height: 23px;">
+  </a>
+</li>
+-->
+
             <li class="nav-item">
               <a class="nav-link {% if page.url == '/views/project605.html' %}active-link{% endif %}" href="/project605/">Project605&trade;</a>
             </li>
